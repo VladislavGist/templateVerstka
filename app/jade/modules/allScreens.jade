@@ -1,0 +1,73 @@
+nav
+  .container
+    .wrap
+      .logo
+        .img
+          a(href="")
+            img(src="upload/logo.svg" alt="logo")
+
+      p Text
+
+header
+  .container
+    h1 Text h1
+    h2 Text h2
+    .wrapBtn
+      a(href="#request_form").anchorBtnBottom.btn1 Button
+    #countdown
+
+.container
+
+  form#request_form.direct.request-form.js-request-form(action='/landing/formaction.php', method='POST', data-form='request', data-type='jsonp', onsub='', mit='')
+    .post
+      .b_form_content
+        ul.form-params
+          li.form-name
+            .param-label Введите Ваше имя
+            label.param-val
+              input.demo-form(type='text', label='Ваше имя', placeholder='Иван Иванов', name='firstname', maxlength='30', required='')
+          li.form-email
+            .param-label Введите Ваш E-mail
+            label.param-val
+              input.demo-form(type='email', label='Ваш E-mail', placeholder='mail@mail.ru', name='email', maxlength='40', required='')
+          li.form-phone
+            .param-label Введите Ваш телефон
+            .phone
+              label.param-val
+                input.demo-form.pre(type='text', placeholder='+7', name='phone_country_code', maxlength='5', required='')
+              label.param-val
+                input.demo-form.code(type='text', placeholder='___', name='phone_code', maxlength='5', required='')
+              label.param-val
+                input.demo-form.num(type='text', placeholder='___-__-__', name='phone', maxlength='7', required='')
+        .landing-form-offers
+          input(name='product_id', type='hidden', value='1881', data-name='Большой курс Google AdWords (Подписка на 365 дней)', data-price='9990', data-theme='Google AdWords')
+
+        ul.form-params
+          button(type='submit') Получить файл
+        .form-agreement
+          label.form-agreement-yes
+            input(type='checkbox', name='is_allowed_personal', checked='checked', value='1')
+            |      Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь c
+            a(target='_blank', href='/upload/doc/oferta.pdf') пользовательским соглашением
+            |  и
+            a(target='_blank', href='/upload/doc/conf_pol.pdf') политикой конфиденциальности
+          label.form-subscribe
+            input(type='checkbox', name='full_agree', checked='checked')
+            span Я согласен на получение рекламной информации от Бизнес Молодости.
+            a.form-subscribe-setup(href='javascript:void(0)') Изменить настройки
+          .form-subscribe-detail
+            label
+              input(type='checkbox', name='is_allowed_sms', value='1', checked='checked')
+              |        Я хочу получать SMS-сообщения о мероприятиях и/или иных услугах Бизнес Молодости
+            label
+              input(type='checkbox', name='is_allowed_email', value='1', checked='checked')
+              |        Я хочу получать email-письма о мероприятиях и/или иных услугах Бизнес Молодости
+            label
+              input(type='checkbox', name='is_allowed_calls', value='1', checked='checked')
+              |        Я хочу получать звонки о мероприятиях и/или иных услугах Бизнес Молодости
+        p(style='text-align:center;')
+          a(href='tel:88005003421') 8(800)5003421
+          br
+          br
+          a(href='mailto:support@institute-bm.com') support@institute-bm.com
+

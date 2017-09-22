@@ -1,0 +1,121 @@
+nav
+  background: black
+  .wrap
+    display: flex
+    justify-content: space-between
+    padding: 20px
+    color: white
+    align-items: center
+
+header
+  padding: 40px 0
+  h1
+    text-align: center
+    margin-bottom: 40px
+  h2
+    text-align: center
+    margin-bottom: 40px
+  .wrapBtn
+    display: flex
+    justify-content: center
+
+//styles form
+#request_form
+  max-width: 500px
+  margin-left: auto
+  margin-right: auto
+  .b_form_content
+    & > p a
+      font-size: 10px
+  ul
+    li
+      padding-left: 0
+      &:before
+        display: none
+      margin-bottom: 0
+      color: black
+      .param-val
+        width: 100%
+        input
+          width: 100%
+          font-family: 'MuseoSansCyrl100'
+          color: #c5c5c5
+          font-size: 14px
+          padding: 11px 10px
+          border: 1px solid #c5c5c5
+          &::-webkit-input-placeholder
+            color: silver
+          &::-moz-placeholder
+            color: silver
+          &:-moz-placeholder
+            color: silver
+          &:-ms-input-placeholder
+            color: silver
+          &:focus
+            color: black !important
+  button
+    display: block
+    margin-left: auto
+    margin-right: auto
+  .param-label
+    line-height: 30px
+    color: black
+    font-size: 14px
+
+  a
+    color: #c5c5c5
+
+  .form-agreement
+    margin-top: 30px
+    color: #c5c5c5
+    font-size: 8px
+    a
+      color: #c5c5c5
+      margin: 0 3px
+    label
+      position: relative
+      padding-left: 20px
+      &:before
+        content: ""
+        width: 12px
+        height: 13px
+        position: absolute
+        border-top: 1px solid white
+        background: #499cf0
+        display: block
+        left: 0
+        border-radius: 3px
+      &:after
+        content: "✔"
+        position: absolute
+        color: white
+        left: 2px
+        top: 0
+        opacity: 0
+
+    input[type="checkbox"]
+      display: none
+    label
+      margin-bottom: 7px
+      font-size: 10px
+  .demo-form.pre
+    padding-left: 54px
+  .phone
+    display: flex
+    .param-val
+      margin-right: 10px
+      flex: 1
+      &:last-child
+        margin-right: 0
+      &:nth-of-type(2)
+        flex: 0.8
+  button
+    margin-top: 27px
+
+.country-list
+  font-size: 15px
+
+@media screen and (max-width: 768px)
+  #request_form .b_form_content
+    padding: 0
+    margin: 0

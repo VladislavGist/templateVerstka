@@ -1,0 +1,86 @@
+
+<nav>
+  <div class="container">
+    <div class="wrap">
+      <div class="logo">
+        <div class="img"><a href=""><img src="upload/logo.svg" alt="logo"/></a></div>
+      </div>
+      <p>Text</p>
+    </div>
+  </div>
+</nav>
+<header>
+  <div class="container">
+    <h1>Text h1</h1>
+    <h2>Text h2</h2>
+    <div class="wrapBtn"><a href="#request_form" class="anchorBtnBottom btn1">Button</a></div>
+    <div id="countdown"></div>
+  </div>
+</header>
+<div class="grid">
+  <div>text</div>
+  <div>text</div>
+  <div>text</div>
+</div>
+<div class="container">
+  <form id="request_form" action="/landing/formaction.php" method="POST" data-form="request" data-type="jsonp" onsub="" mit="" class="direct request-form js-request-form">
+    <div class="post">
+      <div class="b_form_content">
+        <ul class="form-params">
+          <li class="form-name">
+            <div class="param-label">Введите Ваше имя</div>
+            <label class="param-val">
+              <input type="text" label="Ваше имя" placeholder="Иван Иванов" name="firstname" maxlength="30" required="" class="demo-form"/>
+            </label>
+          </li>
+          <li class="form-email">
+            <div class="param-label">Введите Ваш E-mail</div>
+            <label class="param-val">
+              <input type="email" label="Ваш E-mail" placeholder="mail@mail.ru" name="email" maxlength="40" required="" class="demo-form"/>
+            </label>
+          </li>
+          <li class="form-phone">
+            <div class="param-label">Введите Ваш телефон</div>
+            <div class="phone">
+              <label class="param-val">
+                <input type="text" placeholder="+7" name="phone_country_code" maxlength="5" required="" class="demo-form pre"/>
+              </label>
+              <label class="param-val">
+                <input type="text" placeholder="___" name="phone_code" maxlength="5" required="" class="demo-form code"/>
+              </label>
+              <label class="param-val">
+                <input type="text" placeholder="___-__-__" name="phone" maxlength="7" required="" class="demo-form num"/>
+              </label>
+            </div>
+          </li>
+        </ul>
+        <div class="landing-form-offers">
+          <input name="product_id" type="hidden" value="1881" data-name="Большой курс Google AdWords (Подписка на 365 дней)" data-price="9990" data-theme="Google AdWords"/>
+        </div>
+        <ul class="form-params">
+          <button type="submit">Получить файл</button>
+        </ul>
+        <div class="form-agreement">
+          <label class="form-agreement-yes">
+            <input type="checkbox" name="is_allowed_personal" checked="checked" value="1"/>     Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь c<a target="_blank" href="/upload/doc/oferta.pdf">пользовательским соглашением</a> и<a target="_blank" href="/upload/doc/conf_pol.pdf">политикой конфиденциальности</a>
+          </label>
+          <label class="form-subscribe">
+            <input type="checkbox" name="full_agree" checked="checked"/><span>Я согласен на получение рекламной информации от Бизнес Молодости.</span><a href="javascript:void(0)" class="form-subscribe-setup">Изменить настройки</a>
+          </label>
+          <div class="form-subscribe-detail">
+            <label>
+              <input type="checkbox" name="is_allowed_sms" value="1" checked="checked"/>       Я хочу получать SMS-сообщения о мероприятиях и/или иных услугах Бизнес Молодости
+            </label>
+            <label>
+              <input type="checkbox" name="is_allowed_email" value="1" checked="checked"/>       Я хочу получать email-письма о мероприятиях и/или иных услугах Бизнес Молодости
+            </label>
+            <label>
+              <input type="checkbox" name="is_allowed_calls" value="1" checked="checked"/>       Я хочу получать звонки о мероприятиях и/или иных услугах Бизнес Молодости
+            </label>
+          </div>
+        </div>
+        <p style="text-align:center;"><a href="tel:88005003421">8(800)5003421</a><br/><br/><a href="mailto:support@institute-bm.com">support@institute-bm.com</a></p>
+      </div>
+    </div>
+  </form>
+</div>

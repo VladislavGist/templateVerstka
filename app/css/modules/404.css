@@ -1,0 +1,20 @@
+.errors .error-four {
+  font-family: 'WhitneyBlack', sans-serif;
+  font-size: 200px;
+  text-align: center;
+}
+
+.errors .error-text {
+  text-align: center;
+}
+
+.errors a {
+  margin-top: 20px;
+  color: #f06324;
+  text-align: center;
+  display: block;
+}
+
+.errors a:hover {
+  color: black;
+}

@@ -1,0 +1,24 @@
+<!--modals-->
+.modal.fade(tabindex='-1', role='dialog', aria-hidden='true' id="modal-1")
+	.modal-dialog
+		.modal-content
+
+			.modal-header
+				button.close(type='button', data-dismiss='modal', aria-hidden='true')
+				p.modal-title Закажи обратный звонок
+				p.modal-subtitle Оставьте ваш номер телефона и наш менеджер свяжется с вами на счет вашего заказа
+
+			.modal-body
+				form(action="mail.php")#modal-1-form
+					input(type="text" placeholder="Ваше имя" name="name" id="input-1-name")
+					input(type="text" placeholder="Ваш телефон" name="phone" id="input-1-phone")
+					button(class="button-1") Заказать звонок
+
+.modal.fade(tabindex='-1', role='dialog', aria-hidden='true' id="modal-thank")
+	.modal-dialog
+		.modal-content
+
+			.modal-header
+				button.close(type='button', data-dismiss='modal', aria-hidden='true')
+				p.modal-title-thank Спасибо! Мы свяжемся с Вами в ближайшее время
+<!--modals CLOSE-->

@@ -1,0 +1,22 @@
+.btn1, button
+	display: inline-block
+	text-align: center
+	font-size: 16px
+	line-height: 22px
+	padding: 9px 20px 9px
+	border: 2px solid #FFEB20
+	background-color: #FFEB20
+	color: black
+	text-decoration: none
+	border-radius: 60px
+	font-family: 'MuseoSansCyrl300'
+	@extend .transition
+	&:hover
+		background-color: transparent
+		color: black
+		border: 2px solid #FFEB20
+	&:focus
+		color: black
+		text-decoration: none
+	@media screen and (max-width: 480px)
+		font-size: 15px

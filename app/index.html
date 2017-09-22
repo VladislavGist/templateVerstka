@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR">
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+    
+    -->
+    <title>Темплейт</title>
+    <link rel="stylesheet" href="css/vendors.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/libs.min.js"></script>
+    <script src="js/es6compile.js"></script>
+    <noscript>
+      <p>Ваш браузер не поддерживает скрипты! Установите актуальную версию браузера</p>
+    </noscript>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="wrap">
+          <div class="logo">
+            <div class="img"><a href=""><img src="upload/logo.svg" alt="logo"></a></div>
+          </div>
+          <p>Text</p>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <h1>Text h1</h1>
+        <h2>Text h2</h2>
+        <div class="wrapBtn"><a href="#request_form" class="anchorBtnBottom btn1">Button</a></div>
+        <div id="countdown"></div>
+      </div>
+    </header>
+    <div class="grid">
+      <div>text</div>
+      <div>text</div>
+      <div>text</div>
+    </div>
+    <div class="container">
+      <form id="request_form" action="/landing/formaction.php" method="POST" data-form="request" data-type="jsonp" onsub="" mit="" class="direct request-form js-request-form">
+        <div class="post">
+          <div class="b_form_content">
+            <ul class="form-params">
+              <li class="form-name">
+                <div class="param-label">Введите Ваше имя</div>
+                <label class="param-val">
+                  <input type="text" label="Ваше имя" placeholder="Иван Иванов" name="firstname" maxlength="30" required="" class="demo-form">
+                </label>
+              </li>
+              <li class="form-email">
+                <div class="param-label">Введите Ваш E-mail</div>
+                <label class="param-val">
+                  <input type="email" label="Ваш E-mail" placeholder="mail@mail.ru" name="email" maxlength="40" required="" class="demo-form">
+                </label>
+              </li>
+              <li class="form-phone">
+                <div class="param-label">Введите Ваш телефон</div>
+                <div class="phone">
+                  <label class="param-val">
+                    <input type="text" placeholder="+7" name="phone_country_code" maxlength="5" required="" class="demo-form pre">
+                  </label>
+                  <label class="param-val">
+                    <input type="text" placeholder="___" name="phone_code" maxlength="5" required="" class="demo-form code">
+                  </label>
+                  <label class="param-val">
+                    <input type="text" placeholder="___-__-__" name="phone" maxlength="7" required="" class="demo-form num">
+                  </label>
+                </div>
+              </li>
+            </ul>
+            <div class="landing-form-offers">
+              <input name="product_id" type="hidden" value="1881" data-name="Большой курс Google AdWords (Подписка на 365 дней)" data-price="9990" data-theme="Google AdWords">
+            </div>
+            <ul class="form-params">
+              <button type="submit">Получить файл</button>
+            </ul>
+            <div class="form-agreement">
+              <label class="form-agreement-yes">
+                <input type="checkbox" name="is_allowed_personal" checked="checked" value="1">     Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь c<a target="_blank" href="/upload/doc/oferta.pdf">пользовательским соглашением</a> и<a target="_blank" href="/upload/doc/conf_pol.pdf">политикой конфиденциальности</a>
+              </label>
+              <label class="form-subscribe">
+                <input type="checkbox" name="full_agree" checked="checked"><span>Я согласен на получение рекламной информации от Бизнес Молодости.</span><a href="javascript:void(0)" class="form-subscribe-setup">Изменить настройки</a>
+              </label>
+              <div class="form-subscribe-detail">
+                <label>
+                  <input type="checkbox" name="is_allowed_sms" value="1" checked="checked">       Я хочу получать SMS-сообщения о мероприятиях и/или иных услугах Бизнес Молодости
+                </label>
+                <label>
+                  <input type="checkbox" name="is_allowed_email" value="1" checked="checked">       Я хочу получать email-письма о мероприятиях и/или иных услугах Бизнес Молодости
+                </label>
+                <label>
+                  <input type="checkbox" name="is_allowed_calls" value="1" checked="checked">       Я хочу получать звонки о мероприятиях и/или иных услугах Бизнес Молодости
+                </label>
+              </div>
+            </div>
+            <p style="text-align:center;"><a href="tel:88005003421">8(800)5003421</a><br><br><a href="mailto:support@institute-bm.com">support@institute-bm.com</a></p>
+          </div>
+        </div>
+      </form>
+    </div><!--modals-->
+    <div tabindex="-1" role="dialog" aria-hidden="true" id="modal-1" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close"></button>
+            <p class="modal-title">Закажи обратный звонок</p>
+            <p class="modal-subtitle">Оставьте ваш номер телефона и наш менеджер свяжется с вами на счет вашего заказа</p>
+          </div>
+          <div class="modal-body">
+            <form action="mail.php" id="modal-1-form">
+              <input type="text" placeholder="Ваше имя" name="name" id="input-1-name">
+              <input type="text" placeholder="Ваш телефон" name="phone" id="input-1-phone">
+              <button class="button-1">Заказать звонок</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-hidden="true" id="modal-thank" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close"></button>
+            <p class="modal-title-thank">Спасибо! Мы свяжемся с Вами в ближайшее время</p>
+          </div>
+        </div>
+      </div>
+    </div><!--modals CLOSE-->
+  </body>
+</html>
